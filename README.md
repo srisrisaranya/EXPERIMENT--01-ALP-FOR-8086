@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : SARANYA S
+Roll no: 212223110044
+Date of experiment : 03-03-2025
 
 
 
@@ -69,35 +69,97 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 
-
-
-
-
-
-
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
-
+```
+org 100h
+MOV CL,00H
+MOV AL,[4200H]
+MOV BL,[4201H]
+ADD AL,BL
+JNC L
+INC CL
+L:MOV [4202H],AL
+MOV [4203H],CL
+ret
+```
 
 ## Output  
+![PMC-01](https://github.com/user-attachments/assets/c20bfa63-9708-4c46-be5d-0cf7a7cf9e63)
+
  
-## Subtraction   of 8 bit numbers  ALP 
+## Subtraction   of 8 bit numbers  ALP
+```
+org 100h
+MOV AL,[4300H]
+MOV BL,[4301H]
+SUB AL,BL
+MOV [4302H],AL
+ret
+```
  
 ## Output  
+![PMC-02](https://github.com/user-attachments/assets/37bf95d0-8301-4bb9-b58f-c1e3c9b13ef1)
+
+
 ## Multiplication alp 
+```
+org 100h
+MOV AL,[4400H]
+MOV BL,[4401H]
+MUL BL
+MOV [4402H],AL
+MOV [4403H],AH
+ret
+```
+
  ## Output  
 
+![PMC-03](https://github.com/user-attachments/assets/d387fdad-9708-47aa-b2c3-c5601f46895f)
 
 ## Division alp 
+```
+org 100h
+MOV AL,[4300H]
+MOV BL,[4301H]
+DIV BL
+MOV [4302H],AL
+MOV [4303H],AH
+ret
+```
+
 
 ## Output  
 
+![PMC-04](https://github.com/user-attachments/assets/e3e3eaac-2563-4516-8619-e7ffad88d627)
+
+# Logical Operations
+```
+org 100h
+MOV AX,0A32H
+MOV BX,0B31H
+MOV SI,5000H
+OR AX,BX
+MOV [SI],AX
+MOV AX,0A32H
+AND AX,BX
+MOV [SI+2],AX
+MOV AX,0A32H
+XOR AX,BX
+MOV [SI+4],AX
+MOV AX,0A32H
+NOT AX
+MOV [SI+6],AX
+ret
+```
+# output
+
+![PMC-05](https://github.com/user-attachments/assets/49d4518c-5db9-4f99-8122-bdf512eb7796)
 
 ## Result :
  
-
+Thus,the program for arithematic operations and logical operations is executed successfully.
 
 
 
