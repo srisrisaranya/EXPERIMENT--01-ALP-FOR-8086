@@ -1,9 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
-```
-Name : SARANYA S
-Roll no: 212223110044
-Date of experiment : 03-03-2025
-```
+
+# Name : SARANYA S
+# Roll no: 212223110044
+# Date of experiment : 03-03-2025
 
 ## Aim: 
 To Write and execute ALP on fundamental arithmetic and logical operations
